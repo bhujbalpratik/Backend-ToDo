@@ -1,6 +1,12 @@
 import { User } from "../models/user.model.js"
 import { sendCookie } from "../utils/features.js"
 
+export const check = (req, res) => {
+  return res.status(200).json({
+    message: "Backend Connected Successfully",
+  })
+}
+
 export const user = (req, res) => {
   return res.send(`User Home `)
 }
